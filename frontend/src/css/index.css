@@ -73,18 +73,52 @@ a.active, a:hover{
 }
 
 .cssImg{
-    width:110px;
+    width:105px;
     height:150px;
 }
 
 .jsImg{
-    width:110px;
+    width:105px;
     height:150px;
     margin-left:70px;
 }
 
 .websitesImgs{
     padding: 50px;
+}
+
+.nodeImg{
+    width:145px;
+    height:150px;
+    margin-right:35px;
+}
+
+.mySqlImg{
+    width:175px;
+    height:150px;
+}
+
+.mongoImg{
+    width:165px;
+    height:150px;
+    margin-left:50px;
+}
+
+.backEndImgs{
+    padding:50px;
+}
+
+.react_nativeImg{
+    width:150px;
+    height:160px;
+}
+
+.mobileImgs{
+    padding:50px;
+}
+
+.ourTechs{
+    padding:50px;
 }
 
 @media(max-width: 952px){
@@ -129,7 +163,31 @@ svg text{
     font-family: arial;
 }
 
+.breaks{
+    display:none;
+}
+
 @media(max-width: 858px){
+
+    .breaks{
+        display:block;
+    }
+
+    .htmlImg{
+        margin-right:0px;
+    }
+    
+    .jsImg{
+        margin-left:0px;
+    }
+
+    .nodeImg{
+        margin-right:0px;
+    }
+
+    .mongoImg{
+        margin-left:0px;
+    }
 
     .checkbtn{
         display:block;
