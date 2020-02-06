@@ -1,0 +1,172 @@
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+}
+
+nav{
+    background-color: rgb(68, 131, 68);
+    height:80px;
+    width:100%;
+}
+
+label.logo{
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right:20px;
+}
+
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+
+nav ul li a{
+    color:white;
+    font-size:17px;
+    padding: 7px 13px;
+    border-radius:3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover{
+    background:#1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;
+}
+
+#check{
+    display:none;
+}
+
+.globalParagrath{
+    font-size:20px;
+}
+
+.htmlImg{
+    width:145px;
+    height:150px;
+    margin-right:54px;
+}
+
+.cssImg{
+    width:110px;
+    height:150px;
+}
+
+.jsImg{
+    width:110px;
+    height:150px;
+    margin-left:70px;
+}
+
+.websitesImgs{
+    padding: 50px;
+}
+
+@media(max-width: 952px){
+
+    label.logo{
+        font-size:25px;
+        padding-left: 40px;
+    }
+
+    nav ul li a{
+        font-size:13px;
+    }
+
+    .globalParagrath{
+        font-size:17px;
+    }
+
+}
+
+svg{
+    background-color: white;
+}
+
+svg circle{
+    fill:#3FA57A;
+}
+
+svg line{
+    stroke: #3FA57A;
+    stroke-width: 6;
+}
+
+svg polygon{
+    stroke:#3FA57A;
+    stroke-width:6;
+    fill:#3FA57A;
+}
+
+svg text{
+    fill:#3FA57A;
+    font-size: 50px;
+    font-family: arial;
+}
+
+@media(max-width: 858px){
+
+    .checkbtn{
+        display:block;
+    }
+
+    .globalParagrath{
+        font-size:15px;
+    }
+
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background-color: rgb(58, 121, 58);
+        top:80px;
+        left:-100%;
+        text-align:center;
+        transition:all .5s;
+    }
+
+    nav ul li{
+        display:block;
+        margin:50px 0;
+        line-height:30px;
+    }
+
+    nav ul li a{
+        font-size:20px;
+    }
+
+    a:hover, a.active{
+        background:none;
+        color:#0082e6;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+
+}

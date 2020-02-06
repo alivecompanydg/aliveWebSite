@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Navigation Menu Bar</title>
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+<body>
+
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="api/api.js"></script>
+        <script src="src/scripts/script.js"></script>
+        <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Alive Company</label>
+        <ul>
+            <li><a class="active" id="button1" onclick="callPage(1)" href="#">Home</a></li>
+            <li><a id="button2" onclick="callPage(2)" href="#">Quem somos</a></li>
+            <li><a id="button3" onclick="callPage(3)" href="#">Serviços</a></li>
+            <li><a id="button4" onclick="callPage(4)" href="#">Nossas tecnologías</a></li>
+            <li><a id="button5" onclick="callPage(5)" href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <section>
+            <div class="container">
+                    <div class="content">
+            
+                        <div class="home" id="div1"><h1>home</h1></div>
+            
+                        <div class="whoWeAre" id="div2" style="display:none;">
+            
+                            <center>
+                                <svg width="380" height="210">
+                
+                                    <circle cx="40" cy="145" r="13" />
+                                    <line x1="40" y1="145" x2="80" y2="145" />
+                                    <line x1="78" y1="147" x2="110" y2="60" />
+                                    <line x1="108" y1="60" x2="145" y2="147" />
+                                    <line x1="143" y1="145" x2="310" y2="145" />
+                                    <polygon points="310,153 310,137 327,145.5"/>
+                                    <text x="150" y="130">L I V E</text>
+                                    
+                                </svg><br>
+            
+                                <p class="globalParagrath">
+                                    Somos uma nova empresa de desenvolvimento que chegou para trazer
+                                    os melhores serviços de desenvolvimento de software, sistemas e app mobile no mercado.
+                                    Utilizando tecnologias de ponta e boas práticas de desenvolvimento, trazemos aplicações performáticas e fluidas
+                                    para fazer o crescimento do seu negócio ser rápido e sem dor de cabeça.
+                                </p>
+            
+                            </center>
+            
+                        </div>
+            
+                        <div class="services" id="div3" style="display: none;">
+                            <center>
+                                <br><h1>Nossos serviços</h1><br>
+                                <p class="globalParagrath">
+                                    Em nossa empresa os serviços são os mais diversos. Entre nossos serviços você pode encontrar
+                                    desenvolvimento de sites e sistemas web, desenvolvimento de sistemas desktop, desenvolvimento
+                                    de backend servers, apps mobile, estruturação de bancos de dados, consultoría, montagem e manutenção de computadores e vários outros.
+                                    Tomamos sempre o cuidados de utilizar boas praticas e organização em nossos projetos e serviços, sempre com muita cautela e muito carinho
+                                    para nossos colaboradores.
+                                </p>
+                            </center>
+                        </div>
+            
+                        <div class="techs" id="div4" style="display: none;">
+            
+                            <div class="techsContainer">
+                                <center>
+            
+                                    <h1 class="ourTechs">Nossas tecnologías</h1><br><br>
+            
+                                <div class="websiteContainer">
+                                    <h2>WEBSITES FRONTEND</h2>
+                                    <div class="websitesImgs">
+                                        <img src="src/img/html.png" class="htmlImg">
+                                        <img src="src/img/css.png" class="cssImg">
+                                        <img src="src/img/js.png" class="jsImg">
+                                    </div>
+                                </div><br>
+            
+                                <div class="backEndContainer">
+                                    <h2>BACKEND SERVER</h2>
+                                    <div class="backEndImgs">
+                                        <img src="src/img/node.png" class="nodeImg">
+                                        <img src="src/img/mysql.png" class="mySqlImg">
+                                        <img src="src/img/mongo.png" class="mongoImg">
+                                    </div>
+                                </div><br>
+            
+                                <div class="mobileContainer">
+                                    <h2>MOBILE</h2>
+                                    <div class="mobileImgs">
+                                        <br><br><img src="src/img/react_native.png" class="react_nativeImg">
+                                    </div>
+                                </div>
+                                
+                                </center>
+                            </div>
+                            
+                        </div>
+
+                        <div id="div5" style="display:none;">
+                        
+                                <form action="" id="form" method="POST">
+                                        <label>Ficou interessado? Deixe seu email abaixo para mantermos aquele contato <3</label><br>
+                                        <label>Nome: <input type="text" placeholder="Digite seu nome" id="name"></label><br>
+                                        <label>Email: <input type="email" placeholder="Digite seu email" id="email"></label><br>
+                                        <input type="button" onclick="prepareToSave()" value="Salvar">
+                    
+                                        <div id="whatsapp"></div>
+                    
+                                    </form>
+
+                        </div>
+                    </div>
+                </div>
+                <center><br><div id="google_translate_element"></div><br></center>
+    </section>
+</body>
+</html>
