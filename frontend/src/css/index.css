@@ -6,12 +6,28 @@
     box-sizing: border-box;
 }
 
+nav{
+    background-image: url("../img/BCG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0, 0;
+}
+
+.banner{
+    background: #3FA57A;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    width:100%;
+    height:550px;
+}
+
 body{
     font-family: montserrat;
 }
 
 nav{
-    background-color: rgb(68, 131, 68);
+    background-color: #3FA57A;
     height:80px;
     width:100%;
 }
@@ -36,7 +52,14 @@ nav ul li{
 }
 
 nav ul li a{
-    color:white;
+    font-size:17px;
+    padding: 7px 13px;
+    border-radius:3px;
+    text-transform: uppercase;
+}
+
+nav ul li a{
+    color:#3FA57A;
     font-size:17px;
     padding: 7px 13px;
     border-radius:3px;
@@ -123,6 +146,13 @@ a.active, a:hover{
 
 @media(max-width: 952px){
 
+    nav{
+        background-image: url("../img/BCG1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0, 0;
+    }
+
     label.logo{
         font-size:25px;
         padding-left: 40px;
@@ -169,6 +199,18 @@ svg text{
 
 @media(max-width: 858px){
 
+    i{
+        color:#3FA57A;
+    }
+
+    nav ul li a{
+        color:white;
+        font-size:17px;
+        padding: 7px 13px;
+        border-radius:3px;
+        text-transform: uppercase;
+    }
+
     .breaks{
         display:block;
     }
@@ -201,7 +243,7 @@ svg text{
         position:fixed;
         width:100%;
         height:100vh;
-        background-color: rgb(58, 121, 58);
+        background-color: #3FA57A;
         top:80px;
         left:-100%;
         text-align:center;

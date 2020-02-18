@@ -74,4 +74,6 @@ setInterval(() => {
             document.getElementById(`div${i}`).style.display = "none"
         }
     }
-}, 500)
+}, 50)
+
+//alert(window.innerWidth)

@@ -2,7 +2,6 @@
 class Api{
 
     constructor(){
-        this.name
         this.email
         this.parse_email
         this.isValid
