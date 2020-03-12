@@ -5,12 +5,13 @@ module.exports = {
 
     async store(req, res) {
 
-        const { name, email } = req.query
+        const { name, email, telefone } = req.query
 
 
         let usuario = await User.create({
             name,
-            email
+            email,
+            telefone
         })
 
         //res.redirect("")

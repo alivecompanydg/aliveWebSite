@@ -19,6 +19,7 @@ function prepareToSave() {
 
     let name = document.getElementById("name").value
     let email = document.getElementById("email").value
+    let telefone = document.getElementById("telefone").value
 
     let isValid = api.Test(email)
 
@@ -26,14 +27,14 @@ function prepareToSave() {
 
         const form = document.querySelector("#form")
 
-        let url = `http://localhost:3000/cad?name=${name}&email=${email}`
+        let url = `http://localhost:3000/cad?name=${name}&email=${email}&telefone=${telefone}`
 
         form.action = url
 
         fetch(url, {
             mode: 'cors',
             method: 'POST',
-            body: JSON.stringify({ name, email })
+            body: JSON.stringify({ name, email, telefone })
         })
         .then((response) => {
             return response.json()
